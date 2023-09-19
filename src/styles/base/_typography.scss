@@ -1,0 +1,71 @@
+$inter: "Inter", sans-serif;
+
+@mixin inter-bold{
+    font-family: $inter;
+    font-weight: 600;
+}
+
+@mixin inter-medium{
+    font-family: $inter;
+    font-weight: 500;
+}
+
+@mixin inter-regular{
+    font-family: $inter;
+    font-weight: 400;
+}
+
+/***** display *****/
+
+.display-01{
+    @include inter-bold;
+    font-size: 5rem;
+    line-height: 5em;
+    letter-spacing: -0.1em;
+}
+
+.display-02{
+    @include inter-bold;
+    font-size: 4.5rem;
+    line-height: 4.625em;
+    letter-spacing: -0.09em;
+}
+
+.display-03{
+    @include inter-bold;
+    font-size: 4rem;
+    line-height: 4.25em;
+    letter-spacing: -0.08em;
+}
+
+
+/***** headings *****/
+
+.heading-01{
+    @include inter-bold;
+    font-size: 3rem;
+    line-height: 3.25em;
+    letter-spacing: -0.06em;
+}
+
+.heading-02{
+    @include inter-bold;
+    font-size: 2.5rem;
+    line-height: 3em;
+    
+    letter-spacing: -0.025em;
+}
+
+.heading-03{
+    @include inter-bold;
+    font-size: 2rem;
+    line-height: 2.5em;
+    letter-spacing: -0.02em;
+}
+
+.heading-04{
+    @include inter-bold;
+    font-size: 1.5rem;
+    line-height: 2em;
+    letter-spacing: -0.015em;
+}
