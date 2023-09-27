@@ -1,0 +1,196 @@
+/**
+*   Colors
+*
+**/
+
+/***** grey *****/
+
+$grey-900: #1D2026;
+$grey-800: #363B47;
+$grey-700: #4E5566;
+$grey-600: #6E7485;
+$grey-500: #8C94A3;
+$grey-400: #A1A5B3;
+$grey-300: #B7BAC7;
+$grey-200: #CED1D9;
+$grey-100: #E9EAF0;
+$grey-50: #F5F7FA;
+$white: #fff;
+
+$greys : (
+    "grey-50": $grey-50,
+    "grey-100": $grey-100,
+    "grey-200": $grey-200,
+    "grey-300": $grey-300,
+    "grey-400": $grey-400,
+    "grey-500": $grey-500,
+    "grey-600": $grey-600,
+    "grey-700": $grey-700,
+    "grey-800": $grey-800,
+    "grey-900": $grey-900,
+    "white": $white,
+);
+
+
+/***** Primary *****/
+
+$primary-900: #33140B;
+$primary-800: #662916;
+$primary-700: #993D20;
+$primary-600: #CC522B;
+$primary-500: #FF6636;
+$primary-400: #FF855E;
+$primary-300: #FFA386;
+$primary-200: #FFDDD1;
+$primary-100: #FFEEE8;
+
+$primarys : (
+    "primary-100": $primary-100,
+    "primary-200": $primary-200,
+    "primary-300": $primary-300,
+    "primary-400": $primary-400,
+    "primary-500": $primary-500,
+    "primary-600": $primary-600,
+    "primary-700": $primary-700,
+    "primary-800": $primary-800,
+    "primary-900": $primary-900,
+);
+
+/***** Secondary *****/
+
+$secondary-900: #111033;
+$secondary-800: #222065;
+$secondary-700: #342F98;
+$secondary-600: #453FCA;
+$secondary-500: #564FFD;
+$secondary-400: #7872FD;
+$secondary-300: #9A95FE;
+$secondary-200: #CDCBFE;
+$secondary-100: #EBEBFF;
+
+$secondarys : (
+    "secondary-900": $secondary-900,
+    "secondary-800": $secondary-800,
+    "secondary-700": $secondary-700,
+    "secondary-600": $secondary-600,
+    "secondary-500": $secondary-500,
+    "secondary-400": $secondary-400,
+    "secondary-300": $secondary-300,
+    "secondary-200": $secondary-200,
+    "secondary-100": $secondary-100,
+);
+
+/***** Success *****/
+
+$success-900: #07260A;
+$success-800: #0E4C14;
+$success-700: #15711F;
+$success-600: #1C9729;
+$success-500: #23BD33;
+$success-400: #4FCA5C;
+$success-300: #7BD785;
+$success-200: #C3E5C6;
+$success-100: #E1F7E3;
+
+$success : (
+    "success-900": $success-900,
+    "success-800": $success-800,
+    "success-700": $success-700,
+    "success-600": $success-600,
+    "success-500": $success-500,
+    "success-400": $success-400,
+    "success-300": $success-300,
+    "success-200": $success-200,
+    "success-100": $success-100,
+);
+
+/***** Warning *****/
+
+$warning-900: #331D06;
+$warning-800: #65390C;
+$warning-700: #985613;
+$warning-600: #CC7319;
+$warning-500: #FD8E1F;
+$warning-400: #FDA44C;
+$warning-300: #FEBB79;
+$warning-200: #FED1A5;
+$warning-100: #FFF2E5;
+
+$warnings : (
+    "warning-900": $warning-900,
+    "warning-800": $warning-800,
+    "warning-700": $warning-700,
+    "warning-600": $warning-600,
+    "warning-500": $warning-500,
+    "warning-400": $warning-400,
+    "warning-300": $warning-300,
+    "warning-200": $warning-200,
+    "warning-100": $warning-100,
+);
+
+/***** Danger *****/
+
+$error-900: #2D0E0E;
+$error-800: #5B1B1B;
+$error-700: #882929;
+$error-600: #B63636;
+$error-500: #E34444;
+$error-400: #E96969;
+$error-300: #EE8F8F;
+$error-200: #F4C8C8;
+$error-100: #FFF0F0;
+
+$errors : (
+    "error-900": $error-900,
+    "error-800": $error-800,
+    "error-700": $error-700,
+    "error-600": $error-600,
+    "error-500": $error-500,
+    "error-400": $error-400,
+    "error-300": $error-300,
+    "error-200": $error-200,
+    "error-100": $error-100,
+);
+
+$colors : (
+    "greys": $greys,
+    "primarys": $primarys,
+    "secondarys": $secondarys,
+    "success": $success,
+    "warnings": $warnings,
+    "errors": $errors,
+);
+
+
+/***
+**  fonts
+**/
+
+$inter: "Inter", sans-serif;
+
+/***** spacing *****/
+
+// buttons
+$btn-sm-inline-padding: 1rem;
+$btn-md-inline-padding: 1.5rem;
+$btn-lg-inline-padding: 2rem;
+
+$icon-btn-spacing: 1.5rem;
+$icon-btn-sm-spacing: 1rem;
+$icon-btn-svg-width: $icon-btn-spacing;
+$icon-btn-svg-height: $icon-btn-spacing;
+
+$btn-color-transition-duration: 0.35s;
+
+
+
+/***** box-shadows *****/
+
+// buttons
+$btn-box-shadow: 0 6px 20px 0;
+
+//// primary buttons box-shadows
+/// 
+$p-btn-primary-box-shadow: $btn-box-shadow rgba(204, 82, 43, 0.50);
+$p-btn-secondary-box-shadow: $btn-box-shadow rgba(69, 63, 202, 0.50);
+$p-btn-tertiary-box-shadow: $btn-box-shadow rgba(54, 59, 71, 0.50);

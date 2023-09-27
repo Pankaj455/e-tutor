@@ -1,4 +1,4 @@
-$inter: "Inter", sans-serif;
+@use "variables" as *;
 
 @mixin inter-bold{
     font-family: $inter;
@@ -20,22 +20,22 @@ $inter: "Inter", sans-serif;
 .display-01{
     @include inter-bold;
     font-size: 5rem;
-    line-height: 5em;
-    letter-spacing: -0.1em;
+    line-height: 1em;
+    letter-spacing: -0.02em;
 }
 
 .display-02{
     @include inter-bold;
     font-size: 4.5rem;
-    line-height: 4.625em;
-    letter-spacing: -0.09em;
+    line-height: 1.0277em;
+    letter-spacing: -0.02em;
 }
 
 .display-03{
     @include inter-bold;
     font-size: 4rem;
-    line-height: 4.25em;
-    letter-spacing: -0.08em;
+    line-height: 1.0625em;
+    letter-spacing: -0.02em;
 }
 
 
@@ -44,28 +44,202 @@ $inter: "Inter", sans-serif;
 .heading-01{
     @include inter-bold;
     font-size: 3rem;
-    line-height: 3.25em;
-    letter-spacing: -0.06em;
+    line-height: 1.083em;
+    letter-spacing: -0.02em;
 }
 
 .heading-02{
     @include inter-bold;
     font-size: 2.5rem;
-    line-height: 3em;
-    
-    letter-spacing: -0.025em;
+    line-height: 1.2em;
+    letter-spacing: -0.01em;
 }
 
 .heading-03{
     @include inter-bold;
     font-size: 2rem;
-    line-height: 2.5em;
-    letter-spacing: -0.02em;
+    line-height: 1.25em;
+    letter-spacing: -0.01em;
 }
 
 .heading-04{
     @include inter-bold;
     font-size: 1.5rem;
-    line-height: 2em;
-    letter-spacing: -0.015em;
+    line-height: 1.3333em;
+    letter-spacing: -0.01em;
 }
+
+
+/***** button texts *****/
+
+.button-text-lg{
+    @include inter-bold;
+    font-size: 1.125rem;
+    line-height: 3.1111em;
+    letter-spacing: -.01em;
+}
+
+.button-text-md {
+    @include inter-bold;
+    font-size: 1rem;
+    line-height: 3em;
+    letter-spacing: -.008em;
+}
+
+.button-text-sm {
+    @include inter-bold;
+    font-size: .875rem;
+    line-height: 2.86em;
+    letter-spacing: -.004em;
+}
+
+/***** labels *****/
+
+.labels-xxl{
+    @include inter-medium;
+    font-size: 1.125rem;
+    line-height: 1em;
+}
+
+.labels-xl{
+    @include inter-medium;
+    font-size: 1rem;
+    line-height: 1em;
+}
+
+.labels-lg{
+    @include inter-medium;
+    font-size: .875rem;
+    line-height: 1em;
+}
+
+.labels-md{
+    @include inter-medium;
+    font-size: .75rem;
+    line-height: 1em;
+}
+
+.labels-md{
+    @include inter-medium;
+    font-size: .625rem;
+    line-height: 1.2em;
+}
+
+
+/***** body text *****/
+
+.body-xxxl{
+    @include inter-regular;
+    font-size: 1.5rem;
+    line-height: 1.33em;
+}
+
+[class^="body-xxl-"]{
+    font-size: 1.25rem;
+}
+
+.body-xxl-400{
+    @include inter-regular;
+    line-height: 1.6em;
+}
+
+.body-xxl-500{
+    @include inter-medium;
+    line-height: 1.3em;
+}
+
+.body-xxl-600{
+    @include inter-bold;
+    line-height: 1.3em;
+}
+
+[class^="body-xl-"]{
+    font-size: 1.125rem;
+    line-height: 1.33em;
+}
+
+.body-xl-400{
+    @include inter-regular;
+}
+
+.body-xl-500{
+    @include inter-medium;
+}
+
+.body-xl-600{
+    @include inter-bold;
+}
+
+[class^="body-lg-"]{
+    font-size: 1rem;
+}
+
+.body-lg-400{
+    @include inter-regular;
+    line-height: 1.5em;
+}
+
+.body-lg-500{
+    @include inter-medium;
+    line-height: 1.375em;
+}
+
+.body-lg-600{
+    @include inter-bold;
+    line-height: 1.375em;
+}
+
+[class^="body-md-"]{
+    font-size: .875rem;
+}
+
+.body-md-400{
+    @include inter-regular;
+    line-height: 1.57em;
+}
+
+.body-md-500{
+    @include inter-medium;
+    line-height: 1.43em;
+}
+
+.body-md-600{
+    @include inter-bold;
+    line-height: 1.43em;
+}
+
+[class^="body-sm-"]{
+    font-size: .75rem;
+    line-height: 1.33em;
+}
+
+.body-sm-400{
+    @include inter-regular;
+}
+
+.body-sm-500{
+    @include inter-medium;
+}
+
+.body-sm-600{
+    @include inter-bold;
+}
+
+[class^="body-tiny-"]{
+    font-size: .625rem;
+    line-height: 1em;
+}
+
+.body-tiny-400{
+    @include inter-regular;
+}
+
+.body-tiny-500{
+    @include inter-medium;
+}
+
+.body-tiny-600{
+    @include inter-bold;
+}
+
+

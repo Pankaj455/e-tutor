@@ -1,0 +1,401 @@
+@use "../base/typography" as *;
+@use "../base/colors" as *;
+@use "../base/variables" as *;
+
+
+$btn-sm-gap: 0.5rem;
+$btn-gap: 0.75rem;
+$btn-lg-gap: 1rem;
+
+
+// regular button is of medium size
+.disabled{
+    user-select: none !important;
+    pointer-events: none !important;
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.btn-sm,
+.btn-link-sm{
+    @extend .flex-center;
+    @extend .button-text-sm;
+    gap: $btn-sm-gap;
+    padding-inline: $btn-sm-inline-padding;
+    svg{
+        width: $icon-btn-sm-spacing;
+        height: $icon-btn-sm-spacing;
+    }
+}
+
+.btn,
+.btn-link{
+    @extend .flex-center;
+    @extend .button-text-md;
+    gap: $btn-gap;
+    padding-inline: $btn-md-inline-padding;
+    svg{
+        width: $icon-btn-svg-width;
+        height: $icon-btn-svg-height;
+    }
+}
+
+.btn-lg,
+.btn-link-lg{
+    @extend .flex-center;
+    @extend .button-text-lg;
+    gap: $btn-lg-gap;
+    padding-inline: $btn-lg-inline-padding;
+    svg{
+        width: $icon-btn-svg-width;
+        height: $icon-btn-svg-height;
+    }
+}
+
+.icon-btn{
+    @extend .flex-center;
+    font-size: 1rem;
+    padding: .75em;
+    transition: all $btn-color-transition-duration;
+
+    svg{
+        width: $icon-btn-svg-width;
+        height: $icon-btn-svg-height;
+    }
+}
+
+.btn-primary{
+    color: $white;
+    transition: all $btn-color-transition-duration;
+    // text-align: center;
+
+    &.primary{
+        background-color: $primary-500;
+    
+        &:hover{
+            background-color: $primary-600;
+            box-shadow: $p-btn-primary-box-shadow;
+        }
+
+        &.disabled{
+            background-color: $primary-200;
+        }
+    }
+
+    &.secondary{
+        background-color: $secondary-500;
+    
+        &:hover{
+            background-color: $secondary-600;
+            box-shadow: $p-btn-secondary-box-shadow;
+        }
+
+        &.disabled{
+            background-color: $secondary-200;
+        }
+    }
+
+    &.gray{
+        background-color: $grey-900;
+    
+        &:hover{
+            background-color: $grey-800;
+            box-shadow: $p-btn-tertiary-box-shadow;
+        }
+
+        &.disabled{
+            background-color: $grey-200;
+        }
+    }
+}
+
+.btn-secondary{
+    transition: all $btn-color-transition-duration;
+
+    &.primary{
+        background-color: $primary-100;
+        color: $primary-500;
+    
+        &:hover{
+            background-color: $primary-200;
+            color: $primary-600;
+        }
+
+        &.disabled{
+            color: $primary-300;
+        }
+    }
+
+    &.secondary{
+        background-color: $secondary-100;
+        color: $secondary-500;
+    
+        &:hover{
+            background-color: $secondary-200;
+            color: $secondary-600;
+        }
+
+        &.disabled{
+            background-color: $secondary-100;
+            color: $secondary-300;
+        }
+    }
+
+    &.gray{
+        background-color: $grey-50;
+        color: $grey-900;
+    
+        &:hover{
+            background-color: $grey-100;
+            color: $grey-800;
+        }
+
+        &.disabled{
+            background-color: $grey-50;
+            color: $grey-300;
+        }
+    }
+}
+
+.btn-tertiary{ 
+    transition: all $btn-color-transition-duration;
+
+    &.primary{
+        color: $primary-500;
+
+        &:hover{
+            background-color: $primary-100;
+            color: $primary-600;
+        }
+
+        &.disabled{
+            color: $primary-300;
+        }
+        
+    }
+
+    &.secondary{
+        color: $secondary-500;
+
+        &:hover{
+            background-color: $secondary-100;
+            color: $secondary-600;
+        }
+
+        &.disabled{
+            color: $secondary-300;
+        }
+    }
+
+    &.gray{
+        color: $grey-900;
+
+        &:hover{
+            background-color: $grey-50;
+            color: $grey-900;
+        }
+
+        &.disabled{
+            color: $grey-300;
+        }
+    }
+}
+
+/***** icon buttons *****/
+
+.icon-btn-primary{
+    &.primary{
+        svg{
+            fill: $primary-500;
+        }
+
+        &:hover{
+            background: $primary-500;
+            svg{ fill: $white; };
+        }
+    }
+
+    &.secondary{
+        svg{ fill: $secondary-500; }
+
+        &:hover{
+            background-color: $secondary-500;
+            svg{ fill: $white; }
+        }
+    }
+
+    &.gray{
+        background-color: $grey-50;
+        svg{ fill: $grey-900; }
+
+        &:hover{
+            background-color: $grey-900;
+            svg{ fill: $grey-50; }
+        }
+    }
+
+    &.success{
+        background-color: $success-100;
+        color: $success-500;
+
+        &:hover{
+            background-color: $success-500;
+            color: $white;
+        }
+    }
+
+    &.warning{
+        background-color: $warning-100;
+        color: $warning-500;
+
+        &:hover{
+            background-color: $warning-500;
+            color: $white;
+        }
+    }
+
+    &.error{
+        background-color: $error-100;
+        color: $error-500;
+
+        &:hover{
+            background-color: $error-500;
+            color: $white;
+        }
+    }
+}
+
+.icon-btn-secondary{
+    &.primary{
+        svg{ fill: $primary-500; }
+
+        &:hover{
+            background: $primary-200;
+        }
+    }
+
+    &.secondary{
+        svg{ fill: $secondary-500; }
+
+        &:hover{
+            background: $secondary-200;
+        }
+    }
+
+    &.gray{
+        svg{ fill: $grey-900; }
+
+        &:hover{
+            background: $grey-100;
+        }
+    }
+
+    &.success{
+        svg{ fill: $success-500; }
+
+        &:hover{
+            background: $success-200;
+        }
+    }
+
+    &.warning{
+        svg{ fill: $warning-500; }
+
+        &:hover{
+            background: $warning-200;
+        }
+    }
+
+    &.error{
+        svg{ fill: $error-500; }
+
+        &:hover{
+            background: $error-200;
+        }
+    }
+
+}
+
+/***** button links *****/
+
+.btn-link-sm,
+.btn-link,
+.btn-link-lg{
+    position: relative;
+    padding-inline: 0;
+    display: inline-flex;
+
+    &::before{
+        position: absolute;
+        content: '';
+        bottom: 0;
+        left: 0;
+        height: 0.15em;
+        width: 0;
+        transition: width $btn-color-transition-duration;
+
+    }
+
+    &:hover::before{
+        width: 100%;
+    }
+}
+
+.btn-link-primary{
+    color: $primary-500;
+    svg{ fill: $primary-500 }
+
+    &::before{
+        background-color: $primary-500;
+    }
+
+}
+
+.btn-link-secondary{
+    color: $secondary-500;
+    svg{ fill: $secondary-500 }
+
+    &::before{
+        background-color: $secondary-500;
+    }
+}
+
+.btn-link-gray{
+    color: $grey-900;
+    svg{ fill: $grey-900 }
+
+    &::before{
+        background-color: $grey-900;
+    }
+}
+
+.btn-link-success{
+    color: $success-500;
+    svg{ fill: $success-500 }
+
+    &::before{
+        background-color: $success-500;
+    }
+}
+
+.btn-link-warning{
+    color: $warning-500;
+    svg{ fill: $warning-500 }
+
+    &::before{
+        background-color: $warning-500;
+    }
+}
+
+.btn-link-error{
+    color: $error-500;
+    svg{ fill: $error-500 }
+
+    &::before{
+        background-color: $error-500;
+    }
+}
