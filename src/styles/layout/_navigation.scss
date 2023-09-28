@@ -1,0 +1,12 @@
+@use "../base/" as *;
+
+.nav-link{
+    @extend .body-md-500;
+    @extend .text-grey-500;
+    transition: all $nav-link-color-transition-duration;
+
+    &:hover{
+        color: $white !important;
+    }
+
+}

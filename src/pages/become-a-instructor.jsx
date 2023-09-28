@@ -3,11 +3,11 @@ import React from "react";
 const IndexPage = () => {
   return (
       <div>
-        home page
+        Become a instructor page
       </div>
   )
 }
 
 export default IndexPage
 
-export const Head = () => <title>Home Page</title>
+export const Head = () => <title>Become a instructor</title>

@@ -180,7 +180,6 @@ $icon-btn-sm-spacing: 1rem;
 $icon-btn-svg-width: $icon-btn-spacing;
 $icon-btn-svg-height: $icon-btn-spacing;
 
-$btn-color-transition-duration: 0.35s;
 
 
 
@@ -194,3 +193,10 @@ $btn-box-shadow: 0 6px 20px 0;
 $p-btn-primary-box-shadow: $btn-box-shadow rgba(204, 82, 43, 0.50);
 $p-btn-secondary-box-shadow: $btn-box-shadow rgba(69, 63, 202, 0.50);
 $p-btn-tertiary-box-shadow: $btn-box-shadow rgba(54, 59, 71, 0.50);
+
+
+// transitions
+$btn-color-transition-duration: 0.35s;
+$nav-link-color-transition-duration: 0.25s;
+
+
