@@ -3,6 +3,9 @@
 .nav-link{
     @extend .body-md-500;
     @extend .text-grey-500;
+    display: flex;
+    align-items: center;
+    gap: .75rem;
     transition: all $nav-link-color-transition-duration;
 
     &:hover{

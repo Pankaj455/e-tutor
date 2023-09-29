@@ -1,0 +1,51 @@
+@use "../base/" as *;
+
+@each $key, $value in $spacing{
+    // paddings
+
+    .p-#{$key}{
+        padding: $value !important;
+    }
+    .px-#{$key}{
+        padding-inline: $value !important;
+    }
+    .py-#{$key}{
+        padding-block: $value !important;
+    }
+    .ps-#{$key}{
+        padding-left: $value !important;
+    }
+    .pt-#{$key}{
+        padding-top: $value !important;
+    }
+    .pe-#{$key}{
+        padding-right: $value !important;
+    }
+    .pb-#{$key}{
+        padding-bottom: $value !important;
+    }
+
+    // margins
+    .m-#{$key}{
+        margin: $value !important;
+    }
+    .mx-#{$key}{
+        margin-inline: $value !important;
+    }
+    .my-#{$key}{
+        margin-block: $value !important;
+    }
+    .ms-#{$key}{
+        margin-left: $value !important;
+    }
+    .mt-#{$key}{
+        margin-top: $value !important;
+    }
+    .me-#{$key}{
+        margin-right: $value !important;
+    }
+    .mb-#{$key}{
+        margin-bottom: $value !important;
+    }
+
+}

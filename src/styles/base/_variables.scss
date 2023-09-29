@@ -7,6 +7,7 @@
 
 $grey-900: #1D2026;
 $grey-800: #363B47;
+$grey-800-40: #363B4766;
 $grey-700: #4E5566;
 $grey-600: #6E7485;
 $grey-500: #8C94A3;
@@ -27,6 +28,7 @@ $greys : (
     "grey-600": $grey-600,
     "grey-700": $grey-700,
     "grey-800": $grey-800,
+    "grey-800-40": $grey-800-40,
     "grey-900": $grey-900,
     "white": $white,
 );
@@ -198,5 +200,13 @@ $p-btn-tertiary-box-shadow: $btn-box-shadow rgba(54, 59, 71, 0.50);
 // transitions
 $btn-color-transition-duration: 0.35s;
 $nav-link-color-transition-duration: 0.25s;
+
+
+// spacing
+$space-100: 6.25rem;
+
+$spacing: (
+    100: $space-100,
+);
 
 

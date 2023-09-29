@@ -1,0 +1,16 @@
+@use "../base/" as *;
+
+.footer-social{
+    transition: all $btn-color-transition-duration;
+    &:hover{
+        background-color: $primary-500 !important;
+    }
+}
+
+.download-app-link{
+    transition: all $btn-color-transition-duration;
+    &:hover{
+        background-color: $grey-800 !important;
+        box-shadow: 0 1.5px 8px rgba($color: $grey-900, $alpha: 0.4);
+    }
+}
