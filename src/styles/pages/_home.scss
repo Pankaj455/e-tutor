@@ -1,0 +1,9 @@
+@use "../base/" as *;
+
+.hero-section{
+    background: linear-gradient(180deg, #f0f2f500 0.02%, #F0F2F5 220.8%);
+}
+
+.category-card:hover{
+    box-shadow: 0px 12px 32px 0px #1d20261a;
+}
