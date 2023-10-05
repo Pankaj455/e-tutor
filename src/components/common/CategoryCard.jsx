@@ -1,5 +1,3 @@
-import { Cpu } from '@phosphor-icons/react'
-import { StaticImage } from 'gatsby-plugin-image'
 import React from 'react'
 
 const defaultIconProps = {
@@ -18,8 +16,7 @@ function CategoryCard({category}) {
     <div className={`p-5 h-full flex gap-5 cursor-pointer group bg-${theme}-100 hover:bg-white category-card`}>
         <div className={`p-4 flex items-center category-icon bg-white`}>
           {
-            Icon ? (<Icon {...defaultIconProps} className={`text-${theme}-500`} />) : (<Cpu size={32} weight="duotone" className={`text-${theme}-500`} />)
-
+            Icon ? (<Icon {...defaultIconProps} className={`text-${theme}-500`} />) : ""
           }
         </div>
         <div className="flex flex-col gap-2">
@@ -28,32 +25,6 @@ function CategoryCard({category}) {
         </div>
     </div>
   )
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   
 }
 

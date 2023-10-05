@@ -7,3 +7,15 @@
 .category-card:hover{
     box-shadow: 0px 12px 32px 0px #1d20261a;
 }
+
+// testimonials
+
+.testimonials{
+    .down-arrow::after{
+        content: '';
+        display: inline-block;
+        border-width: 1.5rem 1rem;
+        border-style: solid;
+        border-color: #f5f7fa transparent transparent transparent;
+    }
+}

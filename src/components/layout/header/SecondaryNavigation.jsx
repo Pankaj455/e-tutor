@@ -2,16 +2,16 @@ import React from 'react'
 import { Link } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
 import { Bell, Heart, MagnifyingGlass, ShoppingCartSimple } from '@phosphor-icons/react'
+import logo from "../../../images/logos/header-logo.svg"
 
 function SecondaryNavigation() {
   return (
     <div className="px-8 py-4 flex justify-between secondary-nav">
         <div className="flex gap-12">
             <Link to="/">
-                <StaticImage
-                    src="../../../images/logos/header-logo.svg"
+                <img
+                    src={logo}
                     layout="fixed"
-                    alt="e-tutor logo"
                 />
             </Link>
             <div className="flex gap-4">

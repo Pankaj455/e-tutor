@@ -11,7 +11,6 @@ for (const colorName of colourList) {
     colorSafeList.push(`bg-${colorName}-${shade}`)
   })
 
-  console.log(colorSafeList);
 }
 
 module.exports = {

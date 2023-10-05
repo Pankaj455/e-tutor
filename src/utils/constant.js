@@ -1,4 +1,9 @@
-import { BugDroid, Camera, ChartBarHorizontal, CreditCard, FirstAidKit, Handshake, Headphones, MegaphoneSimple, Package, PenNib, Receipt, Translate } from "@phosphor-icons/react";
+import { BugDroid, Camera, ChartBarHorizontal, CircleWavyCheck, CreditCard, FirstAidKit, GlobeHemisphereWest, Handshake, Headphones, MegaphoneSimple, Notebook, Package, PenNib, Receipt, Stack, Translate, Users } from "@phosphor-icons/react";
+
+import netflix from "../images/about/companies/netflix.svg"
+import youtube from "../images/about/companies/youtube.svg"
+import google from "../images/about/companies/google.svg"
+import lenovo from "../images/about/companies/lenovo.svg"
 
 export const categories = [
     {
@@ -72,5 +77,73 @@ export const categories = [
         count: "1,022",
         theme: "primary",
         Icon: Translate,
+    },
+]
+
+export const companies = [
+    {
+        url: netflix,
+        alt: "netflix logo",
+    },
+    {
+        url: youtube,
+        alt: "youtube logo",
+    },
+    {
+        url: google,
+        alt: "google logo",
+    },
+    {
+        url: lenovo,
+        alt: "lenovo logo",
+    },
+    {
+        url: netflix,
+        alt: "netflix logo",
+    },
+    {
+        url: youtube,
+        alt: "youtube logo",
+    },
+    {
+        url: google,
+        alt: "google logo",
+    },
+    {
+        url: lenovo,
+        alt: "lenovo logo",
+    },
+]
+
+export const funFact = [
+    {
+        count: "67.1k",
+        title: "Students",
+        Icon: Users,
+        iconColor: "text-primary-500"
+    },
+    {
+        count: "26k",
+        title: "Certified Instructor",
+        Icon: Notebook,
+        iconColor: "text-secondary-500"
+    },
+    {
+        count: "72",
+        title: "Country Language",
+        Icon: GlobeHemisphereWest,
+        iconColor: "text-error-500"
+    },
+    {
+        count: "99.9%",
+        title: "Success Rate",
+        Icon: CircleWavyCheck,
+        iconColor: "text-success-500"
+    },
+    {
+        count: "57",
+        title: "Trusted Companies",
+        Icon: Stack,
+        iconColor: "text-warning-500"
     },
 ]
