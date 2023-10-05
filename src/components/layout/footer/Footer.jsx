@@ -44,7 +44,7 @@ const Footer = () => {
             </div>
             <div className="col-span-8 grid grid-cols-12 gap-4 xl:gap-6">
               <div className="col-span-6 xl:col-span-6 2xl:col-span-3">
-                <p class="label-lg text-white uppercase mb-5">Top 4 Category</p>
+                <p className="label-lg text-white uppercase mb-5">Top 4 Category</p>
                 <ul>
                   <li className="py-1.5"><Link to="/" className="nav-link">Development</Link></li>
                   <li className="py-1.5"><Link to="/courses" className="nav-link">Finance & Accounting</Link></li>
@@ -53,7 +53,7 @@ const Footer = () => {
                 </ul>
               </div>
               <div className="col-span-6 xl:col-span-6 2xl:col-span-3">
-                <p class="label-lg text-white uppercase mb-5">Quick Links</p>
+                <p className="label-lg text-white uppercase mb-5">Quick Links</p>
                 <ul>
                   <li className="py-1.5"><Link to="/about" className="nav-link">About</Link></li>
                   <li className="py-1.5"><Link to="/courses" className="nav-link">
@@ -63,7 +63,7 @@ const Footer = () => {
                 </ul>
               </div>
               <div className="col-span-6 xl:col-span-6 2xl:col-span-3">
-                <p class="label-lg text-white uppercase mb-5">Support</p>
+                <p className="label-lg text-white uppercase mb-5">Support</p>
                 <ul>
                   <li className="py-1.5"><Link to="/" className="nav-link">Help Center</Link></li>
                   <li className="py-1.5"><Link to="/courses" className="nav-link">FAQs</Link></li>
@@ -73,7 +73,7 @@ const Footer = () => {
               </div>
               <div className="col-span-6 xl:col-span-6 2xl:col-span-3">
                 <div className="w-fit">
-                  <p class="label-lg text-white uppercase mb-5">Downlaod our app</p>
+                  <p className="label-lg text-white uppercase mb-5">Downlaod our app</p>
                   <div className="flex flex-col gap-3">
                     <Link to="#" className="download-app-link py-3 px-5 bg-grey-800-40 flex gap-3.5">
                       <StaticImage

@@ -18,4 +18,20 @@
         border-style: solid;
         border-color: #f5f7fa transparent transparent transparent;
     }
+
+    .custom-swiper{
+        .swiper-wrapper{
+            @extend grid !optional;
+            @extend grid-cols-12 !optional;
+            @extend gap-6 !optional;
+        }
+
+        .swiper-pagination{
+            position: relative;
+        }
+    }
+}
+
+.swiper-pagination-custom{
+    position: relative;
 }

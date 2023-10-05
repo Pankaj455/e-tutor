@@ -5,6 +5,11 @@ import { FunFactCard } from "../components/common";
 import { ArrowRight } from "@phosphor-icons/react/dist/ssr";
 import { Link } from "gatsby";
 import quotes from "../images/about/double_quotes.svg";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import "swiper/css";
+import 'swiper/css/pagination';
+
+import { Pagination } from 'swiper/modules';
 
 const IndexPage = () => {
   return (
@@ -117,8 +122,14 @@ const IndexPage = () => {
 
       {/* testimonials */}
       <section className="w-9/12 mx-auto max-w-[1440px] py-20 testimonials">
-        <div className="grid grid-cols-12 gap-6">
-            <div className="col-span-4">
+        <Swiper
+          className="custom-swiper"
+          spaceBetween={50}
+          slidesPerView={3}
+          modules={[Pagination]}
+          pagination={{ clickable: true }}
+        >
+            <SwiperSlide className="">
               <div className="flex flex-col gap-5">
                 <div>
                   <div className="flex flex-col gap-2 bg-grey-50 p-6">
@@ -133,8 +144,8 @@ const IndexPage = () => {
                   <p className="body-md-400 text-grey-600">Chief Chairman of <span className="body-md-500 text-secondary-500">Google</span></p>
                 </div>
               </div>
-            </div>
-            <div className="col-span-4">
+            </SwiperSlide>
+            <SwiperSlide className="">
               <div className="flex flex-col gap-5">
                 <div>
                   <div className="flex flex-col gap-2 bg-grey-50 p-6">
@@ -149,8 +160,8 @@ const IndexPage = () => {
                   <p className="body-md-400 text-grey-600">CEO of <span className="body-md-500 text-secondary-500">Microsoft</span></p>
                 </div>
               </div>
-            </div>
-            <div className="col-span-4">
+            </SwiperSlide>
+            <SwiperSlide className="">
               <div className="flex flex-col gap-5">
                 <div>
                   <div className="flex flex-col gap-2 bg-grey-50 p-6">
@@ -165,8 +176,8 @@ const IndexPage = () => {
                   <p className="body-md-400 text-grey-600">Chief Executive Officer of <span className="body-md-500 text-secondary-500">Netflix</span></p>
                 </div>
               </div>
-            </div>
-        </div>
+            </SwiperSlide>
+        </Swiper>
       </section>
     </>
   )
