@@ -11,7 +11,7 @@ import 'swiper/css/pagination';
 
 import { Pagination } from 'swiper/modules';
 
-const IndexPage = () => {
+const AboutPage = () => {
   return (
     <>
       <section className="w-9/12 mx-auto py-20 max-w-[1440px]">
@@ -100,7 +100,7 @@ const IndexPage = () => {
         <div className="w-9/12 mx-auto max-w-[1440px] py-20">
             <div className="grid grid-cols-12 gap-16">
               <div className="col-span-4 flex">
-                <div class="self-center">
+                <div className="self-center">
                   <span className="body-lg-500 text-primary-500 uppercase mb-2">Our gallery</span>
                   <h2 className="heading-02 text-grey-900 mb-6">We’ve been here almost 17 years</h2>
                   <p className="body-lg-400 text-grey-700 mb-6">Fusce lobortis leo augue, sit amet tristique nisi commodo in. Aliquam ac libero quis tellus venenatis imperdiet. Sed sed nunc libero. Curabitur in urna ligula. torquent per conubia nostra.</p>
@@ -183,6 +183,6 @@ const IndexPage = () => {
   )
 }
 
-export default IndexPage
+export default AboutPage
 
 export const Head = () => <title>About</title>
