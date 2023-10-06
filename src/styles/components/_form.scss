@@ -11,6 +11,15 @@
     &:hover{
         border-color: $primary-200;
     }
+    
+    &:focus{
+        box-shadow: 0 0 0 2px $primary-200;
+    }
+
+    &[data-type="textarea"]{
+        resize: none;
+        min-height: 7rem;
+    }
 
     &.search{
         padding-left: 3rem;

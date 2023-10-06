@@ -16,8 +16,13 @@ button{
     outline: none;
 }
 
-input{
+input,
+textarea{
     outline: none;
+
+    &:focus{
+        outline: none;
+    }
 }
 
 img{

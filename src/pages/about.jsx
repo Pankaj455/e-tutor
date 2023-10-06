@@ -72,7 +72,7 @@ const AboutPage = () => {
         </div>
       </section>
 
-      {/* out mission */}
+      {/* our mission */}
       <section className="bg-primary-100">
         <div className="w-9/12 mx-auto max-w-[1440px]">
           <div className="grid grid-cols-12 gap-20">

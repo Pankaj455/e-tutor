@@ -147,3 +147,26 @@ export const funFact = [
         iconColor: "text-warning-500"
     },
 ]
+
+export const branches = [
+    {
+        country: "Los Angeles, California",
+        address1: "1702 Olympic Boulevard",
+        address2: "Santa Monica, CA 90404"
+    },
+    {
+        country: "Tokyo, Japan",
+        address1: "901 N Pitt Str., Suite 170",
+        address2: "Tokyo, VA 22314, Japan"
+    },
+    {
+        country: "Moscow, Russia",
+        address1: "Anjeliersstraat 470H, 1015 NL",
+        address2: "Moscow, Russia"
+    },
+    {
+        country: "Mumbai, India",
+        address1: "36 East 20th St, 6th Floor",
+        address2: "Mumbai, India"
+    },
+]
