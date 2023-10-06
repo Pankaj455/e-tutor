@@ -3,8 +3,7 @@ import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
 import { branches } from "../utils/constant";
-import FormInput from "../components/common/FormInput";
-import FormTextArea from "../components/common/FormTextArea";
+import { FormInput, FormTextArea } from "../components/common";
 
 const ContactPage = () => {
 
