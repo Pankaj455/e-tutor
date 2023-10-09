@@ -2,16 +2,11 @@ import { Briefcase, CheckCircle, ClipboardText, MapPinLine, PaperPlaneRight } fr
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
-import { benefits, companies, jobs } from "../utils/constant";
-import { Divider, FormInput, FormTextArea, CategoryCard, IconButton, JobCard } from "../components/common";
-import {Galleries} from "../components/sections"
+import { benefits, companies, jobs } from "../../utils/constant";
+import { Divider, FormInput, FormTextArea, CategoryCard, IconButton, JobCard } from "../../components/common";
+import {Galleries} from "../../components/sections"
 
 const CareerPage = () => {
-
-  /**
-   * TODO -> update background image in the branches section for each branch
-   */
-  // const branchesBg = ["../images/contact/branches-1", "../images/contact/branches-2", "../images/contact/branches-3", "../images/contact/branches-4"]
 
   return (
       <>
@@ -26,7 +21,7 @@ const CareerPage = () => {
             </div>
             <div className="col-span-6">
               <StaticImage
-                src="../images/career/career-main.png"
+                src="../../images/career/career-main.png"
                 alt="Join our creative team"
                 placeholder="none"
                 loading="eager"
@@ -38,11 +33,11 @@ const CareerPage = () => {
 
         {/* join our team  */}
         <section className="bg-grey-50 py-20">
-            <div className="w-9/12 mx-auto max-w-[1440px] pt-8">
+            <div className="w-9/12 mx-auto max-w-[1440px]">
                 <div className="grid grid-cols-12 gap-20">
                     <div className="col-span-6">
                         <StaticImage
-                        src="../images/career/join-our-team.png"
+                        src="../../images/career/join-our-team.png"
                         alt="Join our creative team"
                         placeholder="blurred"
                         className="h-full w-100"
@@ -132,7 +127,7 @@ const CareerPage = () => {
 
         <section className="py-20 bg-grey-50">
           <div className="w-9/12 mx-auto max-w-[1440px]">
-            <h2 className="heading-02 text-grey-900 text-center mb-10">Our all open positions (04)</h2>
+            <h2 className="heading-02 text-grey-900 text-center mb-10">Our all open positions (4)</h2>
             <div className="grid grid-cols-12 gap-12">
                 {jobs.map((job, idx) => {
                     return (
