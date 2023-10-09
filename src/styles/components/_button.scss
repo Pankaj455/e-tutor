@@ -271,6 +271,8 @@ $btn-lg-gap: 1rem;
 
 .icon-btn-secondary{
     &.primary{
+        background-color: $primary-100;
+        color: $primary-500;
         svg{ fill: $primary-500; }
 
         &:hover{
@@ -279,6 +281,8 @@ $btn-lg-gap: 1rem;
     }
 
     &.secondary{
+        background-color: $secondary-100;
+        color: $secondary-500;
         svg{ fill: $secondary-500; }
 
         &:hover{
@@ -287,6 +291,8 @@ $btn-lg-gap: 1rem;
     }
 
     &.gray{
+        background-color: $grey-50;
+        color: $grey-900;
         svg{ fill: $grey-900; }
 
         &:hover{

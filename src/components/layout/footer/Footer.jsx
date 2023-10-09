@@ -59,7 +59,7 @@ const Footer = () => {
                   <li className="py-1.5"><Link to="/courses" className="nav-link">
                     <span>Become Instructor</span><ArrowRight /></Link></li>
                   <li className="py-1.5"><Link to="/contact" className="nav-link">Contact</Link></li>
-                  <li className="py-1.5"><Link to="/about" className="nav-link">Career</Link></li>
+                  <li className="py-1.5"><Link to="/career" className="nav-link">Career</Link></li>
                 </ul>
               </div>
               <div className="col-span-6 xl:col-span-6 2xl:col-span-3">

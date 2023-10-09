@@ -3,7 +3,7 @@ import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
 import { branches } from "../utils/constant";
-import { FormInput, FormTextArea } from "../components/common";
+import { FormInput, FormTextArea, Divider } from "../components/common";
 
 const ContactPage = () => {
 
@@ -28,14 +28,13 @@ const ContactPage = () => {
                 src="../images/contact/contact-main.png"
                 alt="contact with us"
                 placeholder="none"
-                loading="eager"
                 className="h-full w-100"
               />
             </div>
           </div>
         </section>
 
-        <hr className="shadow-[0_-1px_0_0_#E9EAF0_inset]" />
+        <Divider />
 
         <section className="w-9/12 mx-auto max-w-[1440px] py-20">
           <h2 className="heading-02 text-grey-900 text-center mb-4">Our branches all over the world.</h2>

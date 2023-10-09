@@ -13,7 +13,7 @@ function CategoryCard({category, parentStyles}) {
   // const cpuIconClassName = `text-${theme}-500 group-hover:text-white`;
   
   return (
-    <div className={`p-5 h-full cursor-pointer group bg-${theme}-100 hover:bg-white category-card ${parentStyles}`}>
+    <div className={`h-full cursor-pointer group bg-${theme}-100 hover:bg-white category-card ${parentStyles}`}>
         <div className={`p-4 flex items-center category-icon bg-white`}>
           {
             Icon ? (<Icon {...defaultIconProps} className={`text-${theme}-500`} />) : ""

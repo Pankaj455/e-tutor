@@ -1,4 +1,4 @@
-import { BugDroid, Camera, ChartBarHorizontal, CircleWavyCheck, CreditCard, FirstAidKit, GlobeHemisphereWest, Handshake, Headphones, MegaphoneSimple, Notebook, Package, PenNib, Receipt, Stack, Translate, Users } from "@phosphor-icons/react";
+import { Armchair, BugDroid, Camera, ChartBarHorizontal, CircleWavyCheck, CreditCard, FirstAidKit, ForkKnife, Gift, GlobeHemisphereWest, Handshake, Headphones, MegaphoneSimple, Notebook, Package, PenNib, Receipt, Stack, Translate, Trophy, Users } from "@phosphor-icons/react";
 
 import netflix from "../images/about/companies/netflix.svg"
 import youtube from "../images/about/companies/youtube.svg"
@@ -77,6 +77,49 @@ export const categories = [
         count: "1,022",
         theme: "primary",
         Icon: Translate,
+    },
+]
+
+export const benefits = [
+    {
+        name: "Healthy Food & Snacks",
+        theme: "primary",
+        Icon: ForkKnife,
+    },
+    {
+        name: "Personal Career Growth",
+        theme: "secondary",
+        Icon: ChartBarHorizontal,
+    },
+    {
+        name: "Vacation & Paid Time Off",
+        theme: "success",
+        Icon: Armchair,
+    },
+    {
+        name: "Special Allowance & Bonuse",
+        theme: "warning",
+        Icon: Gift,
+    },
+    {
+        name: "Competitive Salary",
+        theme: "success",
+        Icon: CreditCard,
+    },
+    {
+        name: "Well-being memberships",
+        theme: "primary",
+        Icon: Handshake,
+    },
+    {
+        name: "Maternity/Paternity Benefits",
+        theme: "grey",
+        Icon: Trophy,
+    },
+    {
+        name: "Eduguard Annual Events",
+        theme: "secondary",
+        Icon: ForkKnife,
     },
 ]
 
@@ -169,4 +212,35 @@ export const branches = [
         address1: "36 East 20th St, 6th Floor",
         address2: "Mumbai, India"
     },
+]
+
+export const jobs = [
+    {
+        position: "Product Designer (UI/UX Designer)",
+        location: "Tokyo, Japan",
+        type: "Full-Time",
+        vacancies: 3,
+        deadline: "30 June, 2021",
+    },
+    {
+        position: "Product Designer (UI/UX Designer)",
+        location: "Tokyo, Japan",
+        type: "Full-Time",
+        vacancies: 3,
+        deadline: "30 June, 2021",
+    },
+    {
+        position: "Product Designer (UI/UX Designer)",
+        location: "Tokyo, Japan",
+        type: "Full-Time",
+        vacancies: 3,
+        deadline: "30 June, 2021",
+    },
+    {
+        position: "Product Designer (UI/UX Designer)",
+        location: "Tokyo, Japan",
+        type: "Full-Time",
+        vacancies: 3,
+        deadline: "30 June, 2021",
+    }
 ]
