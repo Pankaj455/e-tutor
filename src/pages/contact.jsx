@@ -27,7 +27,8 @@ const ContactPage = () => {
               <StaticImage
                 src="../images/contact/contact-main.png"
                 alt="contact with us"
-                // layout="constrained"
+                placeholder="none"
+                loading="eager"
                 className="h-full w-100"
               />
             </div>

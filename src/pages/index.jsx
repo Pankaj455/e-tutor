@@ -36,7 +36,7 @@ const IndexPage = () => {
             {categories.map((category, idx) => {
               return (
                 <div key={idx} className="col-span-12 md:col-span-6 xl:col-span-3">
-                  <CategoryCard category={category} />
+                  <CategoryCard category={category} parentStyles="flex gap-5 items-center" />
                 </div>
               )
             })}

@@ -26,6 +26,7 @@ const AboutPage = () => {
               src="../images/about/about-main.png"
               alt="We share knowledge with the world"
               loading="eager"
+              placeholder="none"
             />
           </div>
         </div>
@@ -81,6 +82,7 @@ const AboutPage = () => {
                 src="../images/about/our-mission.png"
                 alt="Our one billion mission"
                 // layout="constrained"
+                placeholder="blurred"
                 className="h-full w-100"
               />
             </div>
@@ -113,6 +115,7 @@ const AboutPage = () => {
                 <StaticImage
                   src="../images/about/gallery.png"
                   alt="our gallery"
+                  placeholder="blurred"
                   className="h-full w-full"
                 />
               </div>
