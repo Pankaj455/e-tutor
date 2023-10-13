@@ -128,7 +128,7 @@ const CareerPage = () => {
         <section className="py-20 bg-grey-50">
           <div className="w-9/12 mx-auto max-w-[1440px]">
             <h2 className="heading-02 text-grey-900 text-center mb-10">Our all open positions (4)</h2>
-            <div className="grid grid-cols-12 gap-12">
+            <div className="grid grid-cols-12 gap-6">
                 {jobs.map((job, idx) => {
                     return (
                         <div key={idx} className="col-span-4">

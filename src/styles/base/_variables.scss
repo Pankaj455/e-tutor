@@ -199,8 +199,9 @@ $p-btn-tertiary-box-shadow: $btn-box-shadow rgba(54, 59, 71, 0.50);
 
 
 // transitions
+$transition-duration: 0.25s;
 $btn-color-transition-duration: 0.35s;
-$nav-link-color-transition-duration: 0.25s;
+$nav-link-color-transition-duration: $transition-duration;
 
 
 // spacing
