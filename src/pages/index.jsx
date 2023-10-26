@@ -1,11 +1,32 @@
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {categories, bestCourses} from "../utils/constant";
-import { ArrowRight, Star } from "@phosphor-icons/react";
-import { Divider, CategoryCard, CourseCard } from "../components/common";
+import { ArrowRight, } from "@phosphor-icons/react";
+import { CategoryCard, CourseCard } from "../components/common";
+import axios from "../axios";
 
 const IndexPage = () => {
+  const [courses, setCourses] = useState([])
+
+  const fetchCourses = async () => {
+    try {
+      const {data} = await axios.get("/courses?populate=*");
+      // console.log(data);
+      setCourses(data.data);
+    } catch (error) {
+      console.error('Error fetching courses:', error);
+    }
+  };
+
+  // console.log(courses);
+
+  
+  useEffect(() => {
+    fetchCourses();
+  }, [])
+  
+
   return (
     <>
       <section className="py-100 relative hero-section">
@@ -18,13 +39,13 @@ const IndexPage = () => {
             </div>
           </div>
         </div>
-        {/* <StaticImage
+        <StaticImage
           src="../images/home/hero-img.png"
           layout="constrained"
           alt="hero-background"
           loading="eager"
           className="absolute end-0 top-0"
-        /> */}
+        />
       </section>
 
       {/* top categories  */}
@@ -55,11 +76,11 @@ const IndexPage = () => {
         <div className="w-9/12 max-w-[1440px] mx-auto">
           <h2 className="heading-02 text-grey-900 text-center mb-10">Best selling courses</h2>
           <div className="best-selling-course-container gap-6">
-            {bestCourses.map((course, idx) => {
+            {courses.map((course) => {
               return (
                 <CourseCard
-                  key={idx}
-                  course={course}
+                  key={course.id}
+                  course={course.attributes}
                 />
               )
             })}
