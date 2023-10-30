@@ -34,18 +34,18 @@ const IndexPage = () => {
           <div className="grid grid-cols-12">
             <div className="col-span-6 flex flex-col gap-10">
               <h1 className="display-02 text-grey-900">Learn with expert anytime anywhere</h1>
-              <p className="body-xxxl text-grey-700">Our mision is to help people to find the best course online and learn with expert anytime, anywhere.</p>
+              <p className="body-xxxl text-grey-700">Our mission is to help people to find the best course online and learn with expert anytime, anywhere.</p>
               <Link to="#" className="btn-lg btn-primary primary w-fit">Create Account</Link>
             </div>
           </div>
         </div>
-        <StaticImage
+        {/* <StaticImage
           src="../images/home/hero-img.png"
           layout="constrained"
           alt="hero-background"
           loading="eager"
           className="absolute end-0 top-0"
-        />
+        /> */}
       </section>
 
       {/* top categories  */}
@@ -75,7 +75,7 @@ const IndexPage = () => {
       <section className="bg-grey-50 py-20 overflow-hidden">
         <div className="w-9/12 max-w-[1440px] mx-auto">
           <h2 className="heading-02 text-grey-900 text-center mb-10">Best selling courses</h2>
-          <div className="best-selling-course-container gap-6">
+          <div className="course-container">
             {courses.map((course) => {
               return (
                 <CourseCard

@@ -405,3 +405,29 @@ $btn-lg-gap: 1rem;
         background-color: $error-500;
     }
 }
+
+/***** filter button *****/
+
+.filter-btn{
+    border: 1px solid $primary-200;
+    color: $grey-900;
+
+    .filter{
+        @extend .body-sm-600;
+        display: inline-block;
+        padding-inline: 6px;
+        background-color: $primary-100;
+        color: $primary-500;
+    }
+
+    &:hover{
+        border-color: $primary-500;
+        color: $primary-500;
+
+        .filter{
+            background-color: $primary-500;
+            color: $white;
+        }
+    }
+
+}

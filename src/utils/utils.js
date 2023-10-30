@@ -1,3 +1,5 @@
+import { CATEGORY_ICON_MAP } from "./constant";
+
 export const format = (number) => {
     const config = {
         style: 'decimal',
@@ -7,4 +9,8 @@ export const format = (number) => {
     }
 
     return Intl.NumberFormat(undefined, config).format(number);
+}
+
+export const getCategoryIcon = (category) => {
+    return CATEGORY_ICON_MAP[category];
 }

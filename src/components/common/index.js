@@ -6,5 +6,7 @@ import Divider from "./Divider";
 import IconButton from "./IconButton";
 import JobCard from "./JobCard";
 import CourseCard from "./CourseCard";
+import Filter from "./Filter";
+import SortBy from "./SortBy";
 
-export {CategoryCard, FunFactCard, FormInput, FormTextArea, Divider, IconButton, JobCard, CourseCard};
+export {CategoryCard, FunFactCard, FormInput, FormTextArea, Divider, IconButton, JobCard, CourseCard, Filter, SortBy};

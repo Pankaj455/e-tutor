@@ -1,8 +1,8 @@
 import React, {useRef} from 'react'
 import { StaticImage, GatsbyImage, getImage, getSrc } from 'gatsby-plugin-image';
 import Divider from './Divider';
-import { Star } from '@phosphor-icons/react';
-import { format } from '../../utils/formatter';
+import { Star, User } from '@phosphor-icons/react';
+import { format } from '../../utils/utils';
 
 const COURSE_LABEL = {
     design: {
@@ -61,7 +61,7 @@ function CourseCard({course}) {
   return (
     <div className="course-card flex flex-col bg-white cursor-pointer relative">
         <div className="course-card-img flex">
-            <img src={imageUrl} alt={alt} />
+            <img src={imageUrl} alt={alt} className="w-100 object-cover" />
         </div>
         <div className="course-content py-3.5 flex flex-col gap-2.5">
             <div className="flex justify-between items-center px-3.5">
@@ -79,9 +79,14 @@ function CourseCard({course}) {
                     </div>
                     <span className="body-md-500 text-grey-700">{parseFloat(rating).toFixed(1)}</span>
                 </div>
-                <div>
-                    <span className="body-md-500 text-grey-700">{format(enrolled)}</span>
-                    <span className="body-md-400 text-grey-500 ms-1">students</span>
+                <div className="flex gap-1.5 items-center">
+                    <div>
+                        <User size={20} className='text-secondary-500' />
+                    </div>
+                    <div>
+                        <span className="body-md-500 text-grey-700">{format(enrolled)}</span>
+                        <span className="body-md-400 text-grey-500 ms-1">students</span>
+                    </div>
                 </div>
             </div>
         </div>

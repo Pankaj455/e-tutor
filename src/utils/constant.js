@@ -5,6 +5,21 @@ import youtube from "../images/about/companies/youtube.svg"
 import google from "../images/about/companies/google.svg"
 import lenovo from "../images/about/companies/lenovo.svg"
 
+export const CATEGORY_ICON_MAP = {
+    "IT & Software": ChartBarHorizontal,
+    "Business": Handshake,
+    "Finance & Accounting": CreditCard,
+    "Personal Development": BugDroid,
+    "Office Productivity": Receipt,
+    "Marketing": MegaphoneSimple,
+    "Photography & Video": Camera,
+    "Lifestyle": Package,
+    "Design": PenNib,
+    "Health & Fitness": FirstAidKit,
+    "Music": Headphones,
+    "Translation": Translate
+}
+
 export const categories = [
     {
         name: "IT & Software",
@@ -243,84 +258,4 @@ export const jobs = [
         vacancies: 3,
         deadline: "30 June, 2021",
     }
-]
-
-export const bestCourses = [
-    {
-        imgUrl: "best-course-1",
-        category: {
-            name: "design",
-            theme: "primary",
-        },
-        price: 57,
-        title: "Machine Learning A-Z™: Hands-On Python & R In Data...",
-        rating: 5.0,
-        enrolled: "265.7K",
-    },
-    {
-        imgUrl: "best-course-2",
-        category: {
-            name: "development",
-            theme: "secondary",
-        },
-        price: 60,
-        title: "The Complete 2021 Web Development Bootcamp",
-        rating: 5.0,
-        enrolled: "265.7K",
-    },
-    {
-        imgUrl: "best-course-3",
-        category: {
-            name: "business",
-            theme: "success",
-        },
-        price: 60,
-        title: "The Fundamentals of Stock Market For Beginners 2023",
-        rating: 5.0,
-        enrolled: "200K",
-    },
-    {
-        imgUrl: "best-course-4",
-        category: {
-            name: "marketing",
-            theme: "secondary",
-        },
-        price: 50,
-        title: "The Complete Digital Marketing Course - 12 Courses in 1",
-        rating: 5.0,
-        enrolled: "250K",
-    },
-    {
-        imgUrl: "best-course-5",
-        category: {
-            name: "IT & Software",
-            theme: "error",
-        },
-        price: 65,
-        title: "Reiki Level I, II and Master/Teacher Program",
-        rating: 5.0,
-        enrolled: "205K",
-    },
-    {
-        imgUrl: "best-course-6",
-        category: {
-            name: "marketing",
-            theme: "secondary",
-        },
-        price: 65,
-        title: "The Complete Foundation Stock Trading Course",
-        rating: 5.0,
-        enrolled: "200K",
-    },
-    {
-        imgUrl: "best-course-7",
-        category: {
-            name: "marketing",
-            theme: "secondary",
-        },
-        price: 65,
-        title: "Beginner to Pro in Excel: Financial Modeling and Valuati...",
-        rating: 5.0,
-        enrolled: "212.8K",
-    },
 ]
