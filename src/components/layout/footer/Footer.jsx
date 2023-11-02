@@ -4,6 +4,7 @@ import { Link } from 'gatsby'
 import { ArrowRight } from '@phosphor-icons/react'
 import WithoutAuthFooter from './WithoutAuthFooter'
 import BecomeInstructorFooter from './BecomeInstructorFooter'
+import logo from "../../../images/logos/footer-logo.svg"
 
 
 const Footer = () => {
@@ -17,9 +18,9 @@ const Footer = () => {
         <div className="py-20">
           <div className="grid grid-cols-12 gap-12 xl:gap-6">
             <div className="col-span-4">
-              <Link to="/">
-                {/* <img src={footerLogo} /> */}
-                <StaticImage src="../../../images/logos/footer-logo.svg"  alt="e-tutor logo" className="mb-5" />
+              <Link to="/" className="inline-block">
+                <img src={logo} alt="e-tutor logo" className="mb-5" />
+                {/* <StaticImage src="../../../images/logos/footer-logo.svg" alt="e-tutor logo" className="mb-5" /> */}
               </Link>
               <p className="body-md-400 text-grey-500 mb-6">Aliquam rhoncus ligula est, non pulvinar elit convallis nec. Donec mattis odio at.</p>
 

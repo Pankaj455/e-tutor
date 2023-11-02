@@ -415,11 +415,12 @@ $btn-lg-gap: 1rem;
     .filter{
         @extend .body-sm-600;
         display: inline-block;
-        padding-inline: 6px;
+        padding: 4px 6px;
         background-color: $primary-100;
         color: $primary-500;
     }
 
+    &.active,
     &:hover{
         border-color: $primary-500;
         color: $primary-500;

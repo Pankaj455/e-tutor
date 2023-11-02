@@ -8,5 +8,6 @@ import JobCard from "./JobCard";
 import CourseCard from "./CourseCard";
 import Filter from "./Filter";
 import SortBy from "./SortBy";
+import FilterCheck from "./FilterCheck";
 
-export {CategoryCard, FunFactCard, FormInput, FormTextArea, Divider, IconButton, JobCard, CourseCard, Filter, SortBy};
+export {CategoryCard, FunFactCard, FormInput, FormTextArea, Divider, IconButton, JobCard, CourseCard, Filter, SortBy, FilterCheck};

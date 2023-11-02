@@ -12,9 +12,9 @@
         border-color: $primary-200;
     }
     
-    &:focus{
-        box-shadow: 0 0 0 2px $primary-200;
-    }
+    // &:focus{
+    //     box-shadow: 0 0 0 2px $primary-200;
+    // }
 
     &[data-type="textarea"]{
         resize: none;

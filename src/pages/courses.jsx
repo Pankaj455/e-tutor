@@ -7,6 +7,7 @@ import { CourseCard, SortBy, Filter } from "../components/common";
 const IndexPage = () => {
   const [courses, setCourses] = useState([]);
   const [isFilterOpen, setIsFilterOpen] = useState(true)
+  const [filters, setFilters] = useState([])
 
   const fetchCourses = async () => {
     try {
@@ -27,8 +28,8 @@ const IndexPage = () => {
         <div className="w-9/12 mx-auto max-w-[1440px]">
           <div className="flex justify-between items-center mb-10">
             <div className="flex gap-6">
-              <button className="btn filter-btn" onClick={() =>setIsFilterOpen(prev => !prev)}>
-                <Faders /> Filter <div className="filter body-sm-600"></div>
+              <button className={`btn filter-btn ${isFilterOpen ? "active" : ""}`} onClick={() =>setIsFilterOpen(prev => !prev)}>
+                <Faders /> Filter <div className={`filter body-sm-600 leading-[normal] text-xs transition-all duration-200 ${isFilterOpen && filters.length > 0 ? "opacity-100 px-1.5 py-1" : "opacity-0 p-0"}`}>{filters.length}</div>
               </button>
             </div>
 
